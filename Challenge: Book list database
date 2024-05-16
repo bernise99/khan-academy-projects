@@ -1,0 +1,12 @@
+/** Book List:
+Bridgerton (8.5)
+To All The Boys I've Loved Before (7.5)
+Harry Potter Series (9)
+**/
+
+CREATE TABLE books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER  );
+
+INSERT INTO books VALUES (1, "Bridgerton", 8.5 );
+INSERT INTO books VALUES (2, "To All The Boys I've Loved Before", 7.5);
+INSERT INTO books VALUES (3, "Harry Potter Series", 9);
+Select * FROM books;
