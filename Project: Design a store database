@@ -1,0 +1,21 @@
+CREATE TABLE store_items
+ (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER);
+ 
+ INSERT INTO store_items VALUES (1, "Balls", 5, 3);
+ INSERT INTO store_items VALUES (2, "Plushies", 10, 3);
+ INSERT INTO store_items VALUES (3, "Dolls", 8, 3);
+ INSERT INTO store_items VALUES (4, "Cars", 4, 3);
+ INSERT INTO store_items VALUES (5, "Action Figures", 9, 3);
+ INSERT INTO store_items VALUES (6, "Jeans", 7, 2);
+ INSERT INTO store_items VALUES (7, "Shirts", 5, 2);
+ INSERT INTO store_items VALUES (8, "Jackets", 8, 2);
+ INSERT INTO store_items VALUES (9, "Shorts", 3, 2);
+ INSERT INTO store_items VALUES (10, "Plates", 7, 1);
+ INSERT INTO store_items VALUES (11, "Cups", 4, 1);
+ INSERT INTO store_items VALUES (12, "Bowls", 8, 1);
+ INSERT INTO store_items VALUES (13, "Knives", 6, 1);
+ INSERT INTO store_items VALUES (14, "Blenders", 3, 1);
+ INSERT INTO store_items VALUES (15, "Cutting Boards", 7, 1);
+ SELECT * FROM store_items;
+ SELECT SUM(quantity) FROM store_items;
+ SELECT aisle, SUM(quantity) FROM store_items GROUP BY aisle;
